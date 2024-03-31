@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*shadow play & ticket icon (hero section)*/
+.boxShadow{
+    filter: drop-shadow(-5px 5px 0px #554F95);
+}
+
+/*material ui dowm arrow icon class*/
+.MuiSvgIcon-root{
+        font-size: 75px !important;
+        color: #ffff !important;
+
+}

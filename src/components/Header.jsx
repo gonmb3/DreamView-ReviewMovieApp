@@ -39,7 +39,7 @@ const Header = () => {
           ))}
           {/*  buy tickets btn */}
           <div className="ml-6 hidden md:block">
-            <Link to="/reseñas">
+            <Link to="/tickets">
               <button className="bg-[#554F95] px-6 py-[8.7px] rounded-md ">
                 Comprar Ticket
               </button>
@@ -48,7 +48,7 @@ const Header = () => {
           
           {/* responive mobile ticket btn  */}
           <div className="ml-6  md:hidden">
-            <Link to="/reseñas">
+            <Link to="/tickets">
               <button className=" ">
               <img src={ticketIcon} className="w-14 boxShadow"/>
               </button>

@@ -97,7 +97,7 @@ const ReviewForm = () => {
 
 
   return (
-    <section className=" xl:px-[4.3rem] bg-[#282828]  mx-auto  h-full mt-[62px] p-5 pt-20">
+    <section className=" xl:px-[4.3rem] bg-[#282828]  mx-auto  h-full p-5 pt-20">
       {/* title section */}
       <h2 className=" p-5 md:pt-20 text-4xl font-bold text-white ">
         Reseña de peliculas

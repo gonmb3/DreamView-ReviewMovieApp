@@ -97,7 +97,7 @@ const ReviewForm = () => {
 
 
   return (
-    <section className=" xl:px-[4.3rem] bg-[#282828]  mx-auto h-screen  p-5 pt-20">
+    <section className=" xl:px-[4.3rem] bg-[#282828]  mx-auto  h-full mt-[62px] p-5 pt-20">
       {/* title section */}
       <h2 className=" p-5 md:pt-20 text-4xl font-bold text-white ">
         Reseña de peliculas
@@ -251,7 +251,7 @@ const ReviewForm = () => {
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                   <Box sx={{ alignItems: "center" }}>
 
-                        <div className=" flex flex-col sm:flex md:flex-row justify-evenly gap-6 items-center mt-5">
+                        <div className=" flex flex-col sm:flex md:flex-row justify-evenly gap-6 items-center mt-5 ">
                             <button 
                             type="submit"
                             className=" font-bold text-xl text-white px-20 py-4 
@@ -270,6 +270,7 @@ const ReviewForm = () => {
           </Card>
         </Box>
       </form>
+      {/* modal component */}
       <Modal isOpen={modalOpen} clearFormFields={clearFormFields} onClose={handleModalClose} formData={formData} />
     </section>
   );

@@ -13,7 +13,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full py-1 bg-[#191B19] opacity-95 px-[.5rem] lg:px-[2.3rem] xl:px-[4.3rem] text-white fixed z-50">
+    <header className="w-full py-1 bg-[#191B19] opacity-95 px-[.5rem] lg:px-[2.3rem] xl:px-[4.3rem] text-white fixed top-0 left-0 right-0 z-50">
       <div className="flex items-center justify-between">
         {/* logo */}
         <div className="">

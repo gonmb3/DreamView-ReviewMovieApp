@@ -77,7 +77,7 @@ const MovieHero = () => {
                   alt="movie-img"
                   className="w-[4rem] md:w-[4.5rem]   boxShadow"
                 />
-                <p className="text-gray-300 text-xl">Ver trailer</p>
+                <p className="text-gray-300  text-[17px] md:text-xl">Ver trailer</p>
               </div>
               {/* ticket icon */}
               <div className="flex flex-col items-center  mr-0 md:mr-20 ">
@@ -88,7 +88,7 @@ const MovieHero = () => {
                     className="w-[4rem] md:w-[4.5rem]  boxShadow "
                   />
                 </Link>
-                <p className="text-gray-300 text-xl">Dejar reseña</p>
+                <p className="text-gray-300  text-[17px] md:text-xl">Dejar reseña</p>
               </div>
             </div>
           </div>

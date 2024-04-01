@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 const MovieHero = () => {
   return (
     <section
-      className=" flex justify-center px-10 w-[92%]  lg:w-[90%] xl:w-[80%] mx-auto py-60
-     h-full mt-36 "
+      className=" flex justify-center px-10 w-[92%]  lg:w-[90%] xl:w-[80%] mx-auto
+     h-full mt-40 "
     >
       {/* img container */}
       <div className="relative z-50  md:flex   ">
@@ -17,7 +17,7 @@ const MovieHero = () => {
         <img
           src={movie1}
           alt="movie-img"
-          className="lg:w-[900px]  object-cover
+          className="lg:w-[900px]
          relative left-2 lg:top-[-20px] rounded-md " 
         />
         {/*rating container */}

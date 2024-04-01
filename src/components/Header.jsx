@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import ticketIcon from "../assets/images/TicketIcon.png";
 
-ticketIcon
+ticketIcon;
 
 const Header = () => {
   const navLinks = [
@@ -45,12 +45,12 @@ const Header = () => {
               </button>
             </Link>
           </div>
-          
+
           {/* responive mobile ticket btn  */}
           <div className="ml-6  md:hidden">
             <Link to="/tickets">
               <button className=" ">
-              <img src={ticketIcon} className="w-14 boxShadow"/>
+                <img src={ticketIcon} className="w-14 boxShadow" />
               </button>
             </Link>
           </div>

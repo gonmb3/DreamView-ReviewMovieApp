@@ -1,22 +1,24 @@
-import movie1 from "../assets/images/movie2.png";
+import movie1 from "../assets/images/movie.png";
 import starIcon from "../assets/images/starIcon.png";
 import playIcon from "../assets/images/playIcon.png";
 import ticketIcon from "../assets/images/TicketIcon.png";
 
-import React from "react";
 import { Link } from "react-router-dom";
 
 const MovieHero = () => {
   return (
-    <section className=" flex justify-center px-10 w-[92%]  lg:w-[90%] xl:w-[80%] mx-auto h-full mt-40  ">
+    <section
+      className=" flex justify-center px-10 w-[92%]  lg:w-[90%] xl:w-[80%] mx-auto py-60
+     h-full mt-36 "
+    >
       {/* img container */}
-      <div className="relative z-50  md:flex  ">
+      <div className="relative z-50  md:flex   ">
         {/* movie image */}
         <img
           src={movie1}
           alt="movie-img"
-          className="lg:w-[700px]  object-cover
-         relative left-2 lg:top-[-20px]"
+          className="lg:w-[900px]  object-cover
+         relative left-2 lg:top-[-20px] rounded-md " 
         />
         {/*rating container */}
         <div
@@ -33,8 +35,8 @@ const MovieHero = () => {
         <div className="">
           {/* movie descriptin container */}
           <div
-            className=" hidden w-[90%] bg-gray-400 md:flex flex-col px-4  lg:px-10
-           gap-2 py-2 lg:py-8 border-[.5rem] border-[#514a9c] rounded-lg"
+            className=" hidden w-[90%] bg-gray-400/75 md:flex flex-col px-4  lg:px-10
+           gap-2 py-8 border-[.5rem] border-[#514a9c] rounded-lg"
           >
             <h1 className=" text-[40px] lg:text-[50px] xl:text-[70px] text-black ">
               Jhon Wick 4
@@ -47,8 +49,7 @@ const MovieHero = () => {
             xl:text-[18px] font-semibold rounded-md mt-2 "
             >
               <p className="my-2  ">
-                Jhon Wick 4 comienza con el personaje del título (Keanu Reeves){" "}
-                <br />
+                Jhon Wick 4 comienza con el personaje del título (Keanu Reeves)
                 huyendo de nuevo mientras tiene a cientos de asesinos pisándole
                 los talones. El villano principal de la serie es el Marqués de
                 Gramont (Bill SkarsGard), un lider de la Alta Mesa que sigue
@@ -72,23 +73,36 @@ const MovieHero = () => {
             <div className="flex gap-4 lg:gap-20 mb-5 ">
               <div className="flex flex-col items-center ml-6">
                 {/*play icon */}
+
                 <img
                   src={playIcon}
                   alt="movie-img"
-                  className="w-[4rem] md:w-[4.5rem]   boxShadow"
+                  className="w-[3rem] md:w-[4.5rem]   boxShadow"
                 />
-                <p className="text-gray-300  text-[17px] md:text-xl">Ver trailer</p>
+                <Link
+                  target="_blank"
+                  to="https://www.youtube.com/watch?v=qEVUtrk8_B4"
+                >
+                  <p className="text-gray-300 hover:bg-[#554F95] rounded-md text-center px-4 py-1   text-[17px] md:text-xl">
+                    Ver trailer
+                  </p>
+                </Link>
               </div>
               {/* ticket icon */}
               <div className="flex flex-col items-center  mr-0 md:mr-20 ">
-                <Link to="/reseñas">
+             
+             
                   <img
                     src={ticketIcon}
                     alt="movie-img"
-                    className="w-[4rem] md:w-[4.5rem]  boxShadow "
+                    className="w-[3rem] md:w-[4.5rem]  boxShadow "
                   />
+               
+                <Link to="/reseñas">
+                <p className="text-gray-300 hover:bg-[#554F95] rounded-md text-center px-4 py-1  duration-300  text-[17px] md:text-xl">
+                  Dejar reseña
+                </p>
                 </Link>
-                <p className="text-gray-300  text-[17px] md:text-xl">Dejar reseña</p>
               </div>
             </div>
           </div>

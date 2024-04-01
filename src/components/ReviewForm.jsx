@@ -13,6 +13,9 @@ import { useState } from "react";
 import { validateEmail } from "../utils";
 import Modal from "./Modal";
 
+import popCorn from "../assets/images/popBg.png"
+import popCorn2 from "../assets/images/popCorn.png"
+
 const ReviewForm = () => {
 
     {/* modal state */}
@@ -46,6 +49,7 @@ const ReviewForm = () => {
         message:""
       });
 
+      {/* onChange value fn */}
       const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
@@ -97,7 +101,8 @@ const ReviewForm = () => {
 
 
   return (
-    <section className=" xl:px-[4.3rem] bg-[#282828]  mx-auto  h-full p-5 pt-20">
+    <section className=" xl:px-[4.3rem] bg-[#282828]  mx-auto  h-full p-5 pt-20 relative">
+     <img src={popCorn} alt="" className="absolute right-0 opacity-35 " />
       {/* title section */}
       <h2 className=" p-5 md:pt-20 text-4xl font-bold text-white ">
         Reseña de peliculas
@@ -269,9 +274,13 @@ const ReviewForm = () => {
             </CardContent>
           </Card>
         </Box>
+
       </form>
       {/* modal component */}
       <Modal isOpen={modalOpen} clearFormFields={clearFormFields} onClose={handleModalClose} formData={formData} />
+  
+
+     
     </section>
   );
 };
